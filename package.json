@@ -1,0 +1,14 @@
+{
+    "name" : "SampleGrunt",
+    "version" : "0.1.0",
+    "author" : "Brandon Random",
+    "private" : true,
+    "devDependencies" : {
+        "grunt" :                       "~0.4.0",
+        "grunt-contrib-copy":           "*",
+        "grunt-text-replace":           "*",
+        "grunt-contrib-clean":          "*",
+        "grunt-contrib-rename":         "*",
+        "matchdep":                     "*"
+    }
+}

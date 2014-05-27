@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "version": "0.0.0",
+  "authors": [
+    "lszymkowiak <ryzy82@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery":           "1.9.*",
+    "bootstrap":        "3.1",
+    "lightbox":         "*",
+    "jquery-cycle":     "*",
+    "supersized":       "*"
+  }
+}
