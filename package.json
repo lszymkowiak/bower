@@ -1,7 +1,7 @@
 {
-    "name" : "SampleGrunt",
+    "name" : "bower",
     "version" : "0.1.0",
-    "author" : "Brandon Random",
+    "author" : "lszymkowiak <ryzy82@gmail.com>",
     "private" : true,
     "devDependencies" : {
         "grunt" :                       "~0.4.0",
@@ -9,6 +9,10 @@
         "grunt-text-replace":           "*",
         "grunt-contrib-clean":          "*",
         "grunt-contrib-rename":         "*",
+        "grunt-contrib-uglify":         "*",
+        "grunt-contrib-concat":         "*",
+        "grunt-contrib-cssmin":         "*",
+        "grunt-run-grunt":              "*",
         "matchdep":                     "*"
     }
 }
