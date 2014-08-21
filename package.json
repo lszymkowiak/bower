@@ -1,18 +1,18 @@
 {
-    "name" : "bower",
+    "name" : "grower",
     "version" : "0.1.0",
     "author" : "lszymkowiak <ryzy82@gmail.com>",
     "private" : true,
     "devDependencies" : {
         "grunt" :                       "~0.4.0",
-        "grunt-contrib-copy":           "*",
-        "grunt-text-replace":           "*",
-        "grunt-contrib-clean":          "*",
-        "grunt-contrib-rename":         "*",
-        "grunt-contrib-uglify":         "*",
-        "grunt-contrib-concat":         "*",
-        "grunt-contrib-cssmin":         "*",
-        "grunt-run-grunt":              "*",
-        "matchdep":                     "*"
+        "grunt-bower-task" :            "*",
+        "grunt-contrib-cssmin" :        "*",
+        "grunt-contrib-clean" :         "*",
+        "grunt-contrib-concat" :        "*",
+        "grunt-contrib-copy" :          "*",
+        "grunt-contrib-rename" :        "*",
+        "grunt-contrib-uglify" :        "*",
+        "grunt-text-replace" :          "*",
+        "matchdep" :                    "*"
     }
 }

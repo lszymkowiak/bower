@@ -10,17 +10,16 @@
         "**/.*",
         "node_modules",
         "bower_components",
-        "test",
-        "tests"
+        "public"
     ],
     "dependencies": {
-        "jquery":           "1.9.*",
-        "jquery-cycle2":    "*",
-        "jquery.ui":            "*",
-        "bootstrap":        "3.1",
-        "lightbox":         "*",
-        "supersized":       "*",
+        "jquery":           "1.*",
+
+        "angular":          "*",
+        "bootstrap":        "3.*",
         "fontawesome":      "*",
-        "uploadify":        "*"
+        "holderjs":         "*",
+        "jquery-cycle2":    "*",
+        "lightbox":         "*"
     }
 }
