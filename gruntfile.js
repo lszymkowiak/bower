@@ -35,6 +35,12 @@ module.exports = function(grunt){
                 ]
             },
 
+            animate: {
+                files: [
+                    {expand: true, cwd: 'bower_components/animate.css/', src: ['animate.css'], dest: 'public/css/', filter: 'isFile'},
+                ]
+            },
+
             bootstrap: {
                 files: [
                     {expand: true, cwd: 'bower_components/bootstrap/dist/js/', src: ['bootstrap.js'], dest: 'public/js/', filter: 'isFile'},
@@ -76,12 +82,6 @@ module.exports = function(grunt){
             fontawesome: {
                 files: [
                     {src: ['public/css/font-awesome.css'], dest: 'public/css/fontawesome.css'},
-                ]
-            },
-
-            jquery_cycle: {
-                files: [
-                    {src: ['public/js/jquery.cycle2.js*'], dest: 'public/js/jquery-cycle2.js'},
                 ]
             },
         },
@@ -133,7 +133,8 @@ module.exports = function(grunt){
                     cwd: 'public/js/',
                     src: ['*.js', '!*.min.js'],
                     dest: 'public/js/',
-                    ext: '.min.js'
+                    ext: '.min.js',
+                    extDot: 'last'
                 }]
             },
         },
@@ -145,7 +146,8 @@ module.exports = function(grunt){
                     cwd: 'public/css/',
                     src: ['*.css', '!*.min.css'],
                     dest: 'public/css/',
-                    ext: '.min.css'
+                    ext: '.min.css',
+                    extDot: 'last'
                 }]
             },
         },
@@ -161,6 +163,9 @@ module.exports = function(grunt){
     // angular
     grunt.registerTask('angular', ['copy:angular']);
 
+    // animate
+    grunt.registerTask('animate', ['copy:animate']);
+
     // bootstrap
     grunt.registerTask('bootstrap', ['copy:bootstrap', 'replace:bootstrap']);
 
@@ -171,7 +176,7 @@ module.exports = function(grunt){
     grunt.registerTask('holder', ['copy:holder']);
 
     // cycle
-    grunt.registerTask('cycle', ['copy:jquery_cycle', 'rename:jquery_cycle']);
+    grunt.registerTask('cycle', ['copy:jquery_cycle']);
 
     // lightbox
     grunt.registerTask('lightbox', ['copy:lightbox', 'replace:lightbox_js', 'replace:lightbox_css']);
@@ -185,6 +190,7 @@ module.exports = function(grunt){
         'clean',
         'jquery',
         'angular',
+        'animate',
         'bootstrap',
         'fontawesome',
         'holder',
